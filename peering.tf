@@ -4,7 +4,7 @@ resource "aws_vpc_peering_connection" "peering" {
   vpc_id        = aws_vpc.main.id #accepter
   auto_accept   = true
   tags =merge(var.common_tags, 
-  var.vpc_perring_tags,
+  var.vpc_peering_tags,
   {
     Name =local.resource
   })
