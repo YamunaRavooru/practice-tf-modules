@@ -30,7 +30,7 @@ resource "aws_route" "database-peering" {
 }
 resource "aws_route" "default-peering" {
     count =var.is_peering_required ?0 :1
-  route_table_id            = aws_route_table.default.route_table_id
+  route_table_id            = data.aws_route_table.default.route_table_id
   destination_cidr_block    =var.cidr_block
   vpc_peering_connection_id = aws_vpc_peering_connection.peering[count.index].id
 }
