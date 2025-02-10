@@ -18,7 +18,7 @@ variable enable_dns_support{
     default= true
 }
 variable "public_subnet_cidr"{
-    default ={}
+
 
 }
 variable "public_subnet_tags"{
