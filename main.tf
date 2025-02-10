@@ -83,7 +83,7 @@ resource "aws_nat_gateway" "example" {
 
   tags =merge(var.common_tags,
    {
-    Name =${local.resource}
+    Name =local.resource
   })
 
   # To ensure proper ordering, it is recommended to add an explicit dependency
