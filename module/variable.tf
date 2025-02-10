@@ -11,3 +11,6 @@ variable "common_tags"{
         terraform="true"
     }
 }
+variable "cidr_block"{
+    
+}
