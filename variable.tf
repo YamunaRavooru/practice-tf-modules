@@ -38,3 +38,9 @@ variable "database_subnet_tags"{
 variable "private_subnet_tags"{
     default={}
 }
+variable "is_peering_required"{
+    default= false
+}
+variable "vpc_peering_tags"{
+    default ={}
+}
